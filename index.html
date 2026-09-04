@@ -1,0 +1,2046 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="aos.css">
+
+
+    <style>
+        body{
+            background-color: #fbd271 !important;
+        }
+        .nav-item a{
+            color:#602902 !important;
+        }
+        .dropdown-menu a{
+            background-color:#602902 !important;
+            color:#ff9c08 !important;
+        }
+        .card1{
+            height: 300px !important;
+        }
+        
+        .card1-img{
+            width: 80% !important;
+            height: 200px !important;
+            object-fit: cover !important;
+            display: block !important;
+            margin: 0 auto !important;
+            border-radius: 8px !important;
+
+        }
+        .card img{
+              width: 80% !important;
+            height: 200px !important;
+            object-fit: cover !important;
+            display: block !important;
+            margin: 0 auto !important;
+            border-radius: 8px !important;
+        }
+
+        .order-form label{
+            color:#602902;
+        }
+        input[type="checkbox"]{
+            accent-color: #602902;
+        }
+        input[type="checkbox"] {
+    appearance: none;
+    width: 18px;
+    height: 18px;
+    border-radius: 3px;
+    background-color: #fbd271;
+    cursor: pointer;
+}
+input[type="checkbox"]:checked {
+    background-color: #602902;
+    border-color: #602902;
+}
+    </style>
+</head>
+<body>
+     <!-- NAVBAR-->
+         <nav class="navbar navbar-expand-sm fixed-top "
+                style="background-color:#ff9c08;
+                color: #ff9c08;
+                font-weight: bold;">
+             <div class="container-fluid">
+
+             <a class="navbar-brand" href="#home">
+                 <img src="img2/logo.jpg"  
+                 class="rounded-circle" 
+                 style="width:110px;"> 
+             </a>
+            
+             <button class="navbar-toggler" 
+                     type="button" 
+                     data-bs-toggle="collapse" 
+                     data-bs-target="#collapsibleNavbar"
+
+                      aria-controls="collapsibleNavbar"
+                      aria-expanded="false"
+                      aria-label="Toggle navigation">
+
+                  <span class="navbar-toggler-icon"></span>
+             </button>
+
+
+             
+<!-- LINKS -->
+     <div class="collapse navbar-collapse" id="collapsibleNavbar">
+
+             <ul class="navbar-nav mx-auto" >
+
+                 <li class="nav-item">
+                     <a class="nav-link text-warning"  href="#home">Home</a>
+                 </li>
+
+                  <li class="nav-item">
+                     <a class="nav-link text-warning" href="#aboutus">About Us</a>
+                 </li>
+
+                 <!-- menu -->
+                 <li class="nav-item dropdown dropend">
+                     <a class=" nav-link text-warning dropdown-toggle"
+                     herf="#"
+                     role="button"
+                     data-bs-toggle="dropdown">
+                        Menu
+                     </a>
+                     <ul class="dropdown-menu"
+                          style="background-color:#602902;
+                                 color:#ff9c08;">
+                         
+                        <li>
+                            <a class="dropdown-item" href="#burgers">Burgers</a>
+                        </li>
+
+                         <li>
+                            <a class="dropdown-item" href="#pizzas">Pizza</a>
+                        </li>
+
+                         <li>
+                            <a class="dropdown-item" href="#drinks">Drinks</a>
+                        </li>
+
+                        <li>
+                            <a class="dropdown-item" href="#desserts">Desserts</a>
+                        </li>
+                     </ul>
+                 </li>
+                 
+                 <li class="nav-item">
+                     <a class="nav-link text-warning" href="#ourrestaurant">Our Restaurant</a>
+                  </li>
+
+                 <li class="nav-item">
+                     <a class="nav-link text-warning" href="#contactus">Contact Us</a>
+                  </li>
+
+                  <li>
+                    <a class="nav-link" href="#ordernow">Order now</a>
+                  </li>
+                 </ul>
+         </nav>
+     </div>
+
+     <div style="height:100px;"></div>
+
+
+<!-- hero  -->
+
+     <div class="min-vh-100 d-flex align-items-center 
+     justify-content-center text-center"
+      id="home" 
+      style="background-image: url('img2/hero.jpg');
+             background-size: cover;
+             background-position: center;">
+        <section class="" style="background-color: rgba(0,0,0,0.5); 
+                                 color:#ff9c08;
+                                 width:100%;
+                                 padding: 50px 0;">
+            <h1 class="display-1 fw-bold"> 
+                 Bite & Bliss
+            </h1>
+            <p class="fs-4">Good Food.Good Mood.</p>
+              <p class="fs-5">fresh ingredients, delicious flavors,
+                 made just for you!
+                </p>
+
+            <a href="#menu" class="btn btn-warning"> view our menu</a>
+        </section>
+     </div>
+
+    <!-- ================= ABOUT US ================= -->
+
+<section class="about-section py-5" id="aboutus">
+
+    <div class="container">
+
+        <!-- About Text -->
+        <div class="row justify-content-center">
+
+            <div class="col-12 col-lg-9 text-center about-text" 
+            style="color:#602902">
+
+                <h2 class="display-5 fw-bold">
+                    About Bite & Bliss
+                </h2>
+
+                <h4 class="mt-3">
+                    Good Food. Good Mood.
+                </h4>
+
+                <p class="lead mt-3">
+                    At Bite & Bliss, we believe that good food has
+                    the power to bring people together.
+                </p>
+
+                <p>
+                    We prepare delicious meals using fresh ingredients,
+                    quality products, and a lot of love. From juicy
+                    burgers and crispy pizzas to refreshing drinks
+                    and sweet desserts, there's something for everyone.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- Cards -->
+        <div class="row justify-content-center g-4 mt-4"
+      >
+
+            <!-- Card 1 -->
+            <div class="col-12 col-sm-10 col-md-6 col-lg-4" 
+         >
+
+                <div class="card about-card h-100 text-center"
+                style="color:#602902">
+
+                    <div class="card-body">
+
+                        <h5 class="card-title">
+                            Fresh Ingredients
+                        </h5>
+
+                        <img src="img2/fresh.jpg"
+                             class="about-img img-fluid"
+                             alt="Fresh ingredients">
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Card 2 -->
+            <div class="col-12 col-sm-10 col-md-6 col-lg-4">
+
+                <div class="card about-card h-100 text-center"
+                style="color:#602902">
+
+                    <div class="card-body">
+
+                        <h5 class="card-title">
+                            Made With Love
+                        </h5>
+
+                        <img src="img2/made.jpg"
+                             class="about-img img-fluid"
+                             alt="Made with love">
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Card 3 -->
+            <div class="col-12 col-sm-10 col-md-6 col-lg-4">
+
+                <div class="card about-card h-100 text-center"
+                style="color:#602902">
+
+                    <div class="card-body">
+
+                        <h5 class="card-title">
+                            Something for Everyone
+                        </h5>
+
+                        <img src="img2/something.jpg"
+                             class="about-img img-fluid"
+                             alt="Something for everyone">
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+  <!-- menu -->
+
+<section id="menu" class="py-4" style="background-color: #fbd271;">
+
+    <div class="container">
+        <h3 class="text-center fw-bold"
+         style="background-color:#ff9c08;
+                 color:#602902;
+                 font-weight: bold;">
+            Our Menu
+        </h3>
+
+        <ul class="nav nav-tabs justify-content-center mt-4"
+            
+            style="background-color:#ff9c08;
+                 color:#602902;
+                 font-weight: bold;">
+
+            <li class="nav-item">
+                <a class="nav-link"
+                   href="#burgers">
+                    burgers
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link"
+                   href="#pizzas">
+                    Pizzas
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link"
+                   href="#drinks">
+                    Drinks
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link"
+                   href="#desserts">
+                    Desserts
+                </a>
+            </li>
+        </ul>
+    </div>
+
+</section>
+
+<section id="burgers" class="py-5">
+
+    <div class="container">
+        <h2 class="text-center mb-4"
+            style="color:#602902;">
+            Burgers
+        </h2>
+        <div class="row g-4">
+            <!-- B 1 -->
+            <div class="col-12 col-sm-6 col-lg-3"
+                 data-aos="fade-up">
+                <div class="card h-100 text-center">
+                    <img src="img2/b1.jpg"
+                         class="card-img-top"
+                         style="height:350px; object-fit:cover;">
+                    <div class="card-body d-flex flex-column">
+                        <h4 class="card-title">
+                            Classic Cheeseburger
+                        </h4>
+                        <p class="card-text">
+                            $5
+                        </p>
+                        <a href="#ordernow"
+                           class="btn mt-auto"
+                           style="background-color:#602902 !important;
+                                  color:#ff9c08 ;">
+                            order now
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- B 2 -->
+            <div class="col-12 col-sm-6 col-lg-3"
+                 data-aos="fade-up">
+                <div class="card h-100 text-center">
+                    <img src="img2/b2.jpg"
+                         class="card-img-top"
+                         style="height:350px; object-fit:cover;">
+                    <div class="card-body d-flex flex-column">
+                        <h4 class="card-title">
+                            BBQ Burger
+                        </h4>
+                        <p class="card-text">
+                            $6
+                        </p>
+                        <a href="#ordernow"
+                           class="btn mt-auto"
+                           style="background-color:#602902 !important;
+                                  color:#ff9c08 ;">
+                            order now
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- B 3 -->
+            <div class="col-12 col-sm-6 col-lg-3"
+                 data-aos="fade-up">
+                <div class="card h-100 text-center">
+                    <img src="img2/b3.jpg"
+                         class="card-img-top"
+                         style="height:350px; object-fit:cover;">
+                    <div class="card-body d-flex flex-column">
+                        <h4 class="card-title">
+                            bacon cheeseburger
+                        </h4>
+                        <p class="card-text">
+                            $8
+                        </p>
+                        <a href="#ordernow"
+                           class="btn mt-auto"
+                           style="background-color:#602902 !important;
+                                  color:#ff9c08 ;">
+                            order now
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- B 4 -->
+            <div class="col-12 col-sm-6 col-lg-3"
+                 data-aos="fade-up">
+                <div class="card h-100 text-center">
+                    <img src="img2/b4.jpg"
+                         class="card-img-top"
+                         style="height:350px; object-fit:cover;"
+                         >
+                    <div class="card-body d-flex flex-column">
+                        <h4 class="card-title">
+                            chicken burger
+                        </h4>
+                        <p class="card-text">
+                            $7
+                        </p>
+                        <a href="#ordernow"
+                           class="btn mt-auto"
+                           style="background-color:#602902 !important;
+                                  color:#ff9c08 ;">
+                            order now
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<section class="py-5">
+    <div class="container">
+    
+    <div class="row g-4">
+            <!-- b 5-->
+            <div class="col-12 col-sm-6 col-lg-3"
+                 data-aos="fade-up">
+                <div class="card h-100 text-center">
+                    <img src="img2/b5.jpg"
+                         class="card-img-top"
+                         style="height:350px; object-fit:cover;">
+                    <div class="card-body d-flex flex-column">
+                        <h4 class="card-title">
+                            fish burger
+                        </h4>
+                        <p class="card-text">
+                            $10
+                        </p>
+                        <a href="#ordernow"
+                           class="btn mt-auto"
+                           style="background-color:#602902 !important;
+                                  color:#ff9c08 ;">
+                            order now
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- B 6-->
+            <div class="col-12 col-sm-6 col-lg-3"
+                 data-aos="fade-up">
+                <div class="card h-100 text-center">
+                    <img src="img2/b6.jpg"
+                         class="card-img-top"
+                         style="height:350px; object-fit:cover;">
+                    <div class="card-body d-flex flex-column">
+                        <h4 class="card-title">
+                            mushroom Burger
+                        </h4>
+                        <p class="card-text">
+                            $9
+                        </p>
+                        <a href="#ordernow"
+                           class="btn mt-auto"
+                           style="background-color:#602902 !important;
+                                  color:#ff9c08 ;">
+                            order now
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- B 7-->
+            <div class="col-12 col-sm-6 col-lg-3"
+                 data-aos="fade-up">
+                <div class="card h-100 text-center">
+                    <img src="img2/b7.jpg"
+                         class="card-img-top"
+                         style="height:350px; object-fit:cover;">
+                    <div class="card-body d-flex flex-column">
+                        <h4 class="card-title">
+                            double cheeseburger
+                        </h4>
+                        <p class="card-text">
+                            $13
+                        </p>
+                        <a href="#ordernow"
+                           class="btn mt-auto"
+                           style="background-color:#602902 !important;
+                                  color:#ff9c08 ;">
+                            order now
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- B 8-->
+            <div class="col-12 col-sm-6 col-lg-3"
+                 data-aos="fade-up">
+                <div class="card h-100 text-center">
+                    <img src="img2/b8.jpg"
+                         class="card-img-top"
+                         style="height:350px; object-fit:cover;"
+                         >
+                    <div class="card-body d-flex flex-column">
+                        <h4 class="card-title">
+                            veggie burger
+                        </h4>
+                        <p class="card-text">
+                            $11
+                        </p>
+                        <a href="#ordernow"
+                           class="btn mt-auto"
+                           style="background-color:#602902 !important;
+                                  color:#ff9c08 ;">
+                            order now
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<section id="pizzas" class="py-5">
+
+    <div class="container">
+        <h2 class="text-center mb-4"
+            style="color:#602902;">
+            pizzas
+        </h2>
+        <div class="row g-4">
+            <!-- p 1 -->
+            <div class="col-12 col-sm-6 col-lg-3"
+                 data-aos="fade-up">
+                <div class="card h-100 text-center">
+                    <img src="img2/p1.jpg"
+                         class="card-img-top"
+                         style="height:350px; object-fit:cover;">
+                    <div class="card-body d-flex flex-column">
+                        <h4 class="card-title">
+                           four cheese pizza
+                        </h4>
+                        <p class="card-text">
+                            $12
+                        </p>
+                        <a href="#ordernow"
+                           class="btn mt-auto"
+                           style="background-color:#602902 !important;
+                                  color:#ff9c08 ;">
+                            order now
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- p 2 -->
+            <div class="col-12 col-sm-6 col-lg-3"
+                 data-aos="fade-up">
+                <div class="card h-100 text-center">
+                    <img src="img2/p2.jpg"
+                         class="card-img-top"
+                         style="height:350px; object-fit:cover;">
+                    <div class="card-body d-flex flex-column">
+                        <h4 class="card-title">
+                            BBQ pizza
+                        </h4>
+                        <p class="card-text">
+                            $15
+                        </p>
+                        <a href="#ordernow"
+                           class="btn mt-auto"
+                           style="background-color:#602902 !important;
+                                  color:#ff9c08 ;">
+                            order now
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- p 3 -->
+            <div class="col-12 col-sm-6 col-lg-3"
+                 data-aos="fade-up">
+                <div class="card h-100 text-center">
+                    <img src="img2/p3.jpg"
+                         class="card-img-top"
+                         style="height:350px; object-fit:cover;">
+                    <div class="card-body d-flex flex-column">
+                        <h4 class="card-title">
+                            margherita pizza
+                        </h4>
+                        <p class="card-text">
+                            $10
+                        </p>
+                        <a href="#ordernow"
+                           class="btn mt-auto"
+                           style="background-color:#602902 !important;
+                                  color:#ff9c08 ;">
+                            order now
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- p 4 -->
+            <div class="col-12 col-sm-6 col-lg-3"
+                 data-aos="fade-up">
+                <div class="card h-100 text-center">
+                    <img src="img2/p4.jpg"
+                         class="card-img-top"
+                         style="height:350px; object-fit:cover;"
+                         >
+                    <div class="card-body d-flex flex-column">
+                        <h4 class="card-title">
+                            buffalo chicken pizza
+                        </h4>
+                        <p class="card-text">
+                            $14
+                        </p>
+                        <a href="#ordernow"
+                           class="btn mt-auto"
+                           style="background-color:#602902 !important;
+                                  color:#ff9c08 ;">
+                            order now
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-5">
+    <div class="container">
+        <div class="row g-4">
+            <!-- p 5-->
+            <div class="col-12 col-sm-6 col-lg-3"
+                 data-aos="fade-up">
+                <div class="card h-100 text-center">
+                    <img src="img2/p5.jpg"
+                         class="card-img-top"
+                         style="height:350px; object-fit:cover;">
+                    <div class="card-body d-flex flex-column">
+                        <h4 class="card-title">
+                            pepperoni pizza
+                        </h4>
+                        <p class="card-text">
+                            $10
+                        </p>
+                        <a href="#ordernow"
+                           class="btn mt-auto"
+                           style="background-color:#602902 !important;
+                                  color:#ff9c08 ;">
+                            order now
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- p 6-->
+            <div class="col-12 col-sm-6 col-lg-3"
+                 data-aos="fade-up">
+                <div class="card h-100 text-center">
+                    <img src="img2/p6.jpg"
+                         class="card-img-top"
+                         style="height:350px; object-fit:cover;">
+                    <div class="card-body d-flex flex-column">
+                        <h4 class="card-title">
+                            mushroom pizza
+                        </h4>
+                        <p class="card-text">
+                            $14
+                        </p>
+                        <a href="#ordernow"
+                           class="btn mt-auto"
+                           style="background-color:#602902 !important;
+                                  color:#ff9c08 ;">
+                            order now
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- p7-->
+            <div class="col-12 col-sm-6 col-lg-3"
+                 data-aos="fade-up">
+                <div class="card h-100 text-center">
+                    <img src="img2/p7.jpg"
+                         class="card-img-top"
+                         style="height:350px; object-fit:cover;">
+                    <div class="card-body d-flex flex-column">
+                        <h4 class="card-title">
+                            neapolitan pizza
+                        </h4>
+                        <p class="card-text">
+                            $15
+                        </p>
+                        <a href="#ordernow"
+                           class="btn mt-auto"
+                           style="background-color:#602902 !important;
+                                  color:#ff9c08 ;">
+                            order now
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- p8-->
+            <div class="col-12 col-sm-6 col-lg-3"
+                 data-aos="fade-up">
+                <div class="card h-100 text-center">
+                    <img src="img2/p8.jpg"
+                         class="card-img-top"
+                         style="height:350px; object-fit:cover;"
+                         >
+                    <div class="card-body d-flex flex-column">
+                        <h4 class="card-title">
+                            veggie pizza
+                        </h4>
+                        <p class="card-text">
+                            $12
+                        </p>
+                        <a href="#ordernow"
+                           class="btn mt-auto"
+                           style="background-color:#602902 !important;
+                                  color:#ff9c08 ;">
+                            order now
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<section id="drinks" class="py-5">
+
+    <div class="container">
+        <h2 class="text-center mb-4"
+            style="color:#602902;">
+            drinks
+        </h2>
+        <div class="row g-4">
+            <!-- d 1 -->
+            <div class="col-12 col-sm-6 col-lg-3"
+                 data-aos="fade-up">
+                <div class="card h-100 text-center">
+                    <img src="img2/d1.jpg"
+                         class="card-img-top"
+                         style="height:350px; object-fit:cover;">
+                    <div class="card-body d-flex flex-column">
+                        <h4 class="card-title">
+                           water
+                        </h4>
+                        <p class="card-text">
+                            $1
+                        </p>
+                        <a href="#ordernow"
+                           class="btn mt-auto"
+                           style="background-color:#602902 !important;
+                                  color:#ff9c08 ;">
+                            order now
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- d2 -->
+            <div class="col-12 col-sm-6 col-lg-3"
+                 data-aos="fade-up">
+                <div class="card h-100 text-center">
+                    <img src="img2/d2.jpg"
+                         class="card-img-top"
+                         style="height:350px; object-fit:cover;">
+                    <div class="card-body d-flex flex-column">
+                        <h4 class="card-title">
+                            coke
+                        </h4>
+                        <p class="card-text">
+                            $4
+                        </p>
+                        <a href="#ordernow"
+                           class="btn mt-auto"
+                           style="background-color:#602902 !important;
+                                  color:#ff9c08 ;">
+                            order now
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- d3 -->
+            <div class="col-12 col-sm-6 col-lg-3"
+                 data-aos="fade-up">
+                <div class="card h-100 text-center">
+                    <img src="img2/d3.jpg"
+                         class="card-img-top"
+                         style="height:350px; object-fit:cover;">
+                    <div class="card-body d-flex flex-column">
+                        <h4 class="card-title">
+                            milkshake (chocolate, vanilla, strawberry)
+                        </h4>
+                        <p class="card-text">
+                            $7
+                        </p>
+                        <a href="#ordernow"
+                           class="btn mt-auto"
+                           style="background-color:#602902 !important;
+                                  color:#ff9c08 ;">
+                            order now
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- d4 -->
+            <div class="col-12 col-sm-6 col-lg-3"
+                 data-aos="fade-up">
+                <div class="card h-100 text-center">
+                    <img src="img2/d4.jpg"
+                         class="card-img-top"
+                         style="height:350px; object-fit:cover;"
+                         >
+                    <div class="card-body d-flex flex-column">
+                        <h4 class="card-title">
+                            hot chocolate
+                        </h4>
+                        <p class="card-text">
+                            $5
+                        </p>
+                        <a href="#ordernow"
+                           class="btn mt-auto"
+                           style="background-color:#602902 !important;
+                                  color:#ff9c08 ;">
+                            order now
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-5">
+    
+    <div class="container">
+    
+        <div class="row g-4">
+            <!-- d5-->
+            <div class="col-12 col-sm-6 col-lg-3"
+                 data-aos="fade-up">
+                <div class="card h-100 text-center">
+                    <img src="img2/d5.jpg"
+                         class="card-img-top"
+                         style="height:350px; object-fit:cover;">
+                    <div class="card-body d-flex flex-column">
+                        <h4 class="card-title">
+                            juice (orange, mango, watermelon, kiwi, lemon)
+                        </h4>
+                        <p class="card-text">
+                            $6
+                        </p>
+                        <a href="#ordernow"
+                           class="btn mt-auto"
+                           style="background-color:#602902 !important;
+                                  color:#ff9c08 ;">
+                            order now
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- d6-->
+            <div class="col-12 col-sm-6 col-lg-3"
+                 data-aos="fade-up">
+                <div class="card h-100 text-center">
+                    <img src="img2/d6.jpg"
+                         class="card-img-top"
+                         style="height:350px; object-fit:cover;">
+                    <div class="card-body d-flex flex-column">
+                        <h4 class="card-title">
+                            energy drink (red bull, monster, rockstar)
+                        </h4>
+                        <p class="card-text">
+                            $9
+                        </p>
+                        <a href="#ordernow"
+                           class="btn mt-auto"
+                           style="background-color:#602902 !important;
+                                  color:#ff9c08 ;">
+                            order now
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- d7-->
+            <div class="col-12 col-sm-6 col-lg-3"
+                 data-aos="fade-up">
+                <div class="card h-100 text-center">
+                    <img src="img2/d7.jpg"
+                         class="card-img-top"
+                         style="height:350px; object-fit:cover;">
+                    <div class="card-body d-flex flex-column">
+                        <h4 class="card-title">
+                            tequila (blanco, reposado, añejo)
+                        </h4>
+                        <p class="card-text">
+                            $12
+                        </p>
+                        <a href="#ordernow"
+                           class="btn mt-auto"
+                           style="background-color:#602902 !important;
+                                  color:#ff9c08 ;">
+                            order now
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- d8-->
+            <div class="col-12 col-sm-6 col-lg-3"
+                 data-aos="fade-up">
+                <div class="card h-100 text-center">
+                    <img src="img2/d8.jpg"
+                         class="card-img-top"
+                         style="height:350px; object-fit:cover;"
+                         >
+                    <div class="card-body d-flex flex-column">
+                        <h4 class="card-title">
+                            white and red wine
+                        </h4>
+                        <p class="card-text">
+                            $15
+                        </p>
+                        <a href="#ordernow"
+                           class="btn mt-auto"
+                           style="background-color:#602902 !important;
+                                  color:#ff9c08 ;">
+                            order now
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<section id="desserts" class="py-5">
+
+    <div class="container">
+        <h2 class="text-center mb-4"
+            style="color:#602902;">
+            desserts
+        </h2>
+        <div class="row g-4">
+            <!-- de1 -->
+            <div class="col-12 col-sm-6 col-lg-3"
+                 data-aos="fade-up">
+                <div class="card h-100 text-center">
+                    <img src="img2/de1.jpg"
+                         class="card-img-top"
+                         style="height:350px; object-fit:cover;">
+                    <div class="card-body d-flex flex-column">
+                        <h4 class="card-title">
+                           donuts
+                        </h4>
+                        <p class="card-text">
+                            $3
+                        </p>
+                        <a href="#ordernow"
+                           class="btn mt-auto"
+                           style="background-color:#602902 !important;
+                                  color:#ff9c08 ;">
+                            order now
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- de2 -->
+            <div class="col-12 col-sm-6 col-lg-3"
+                 data-aos="fade-up">
+                <div class="card h-100 text-center">
+                    <img src="img2/de2.jpg"
+                         class="card-img-top"
+                         style="height:350px; object-fit:cover;">
+                    <div class="card-body d-flex flex-column">
+                        <h4 class="card-title">
+                            cupcakes (chocolate, vanilla, red velvet)
+                        </h4>
+                        <p class="card-text">
+                            $4
+                        </p>
+                        <a href="#ordernow"
+                           class="btn mt-auto"
+                           style="background-color:#602902 !important;
+                                  color:#ff9c08 ;">
+                            order now
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- de3 -->
+            <div class="col-12 col-sm-6 col-lg-3"
+                 data-aos="fade-up">
+                <div class="card h-100 text-center">
+                    <img src="img2/de3.jpg"
+                         class="card-img-top"
+                         style="height:350px; object-fit:cover;">
+                    <div class="card-body d-flex flex-column">
+                        <h4 class="card-title">
+                            cinnamon rolls
+                        </h4>
+                        <p class="card-text">
+                            $5
+                        </p>
+                        <a href="#ordernow"
+                           class="btn mt-auto"
+                           style="background-color:#602902 !important;
+                                  color:#ff9c08 ;">
+                            order now
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- de5 -->
+            <div class="col-12 col-sm-6 col-lg-3"
+                 data-aos="fade-up">
+                <div class="card h-100 text-center">
+                    <img src="img2/de5.jpg"
+                         class="card-img-top"
+                         style="height:350px; object-fit:cover;"
+                         >
+                    <div class="card-body d-flex flex-column">
+                        <h4 class="card-title">
+                            cookies (chocolate chip, oatmeal, peanut butter)
+                        </h4>
+                        <p class="card-text">
+                            $4
+                        </p>
+                        <a href="#ordernow"
+                           class="btn mt-auto"
+                           style="background-color:#602902 !important;
+                                  color:#ff9c08 ;">
+                            order now
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-5">
+    
+    <div class="container">
+    
+        <div class="row g-4">
+            <!-- de4-->
+            <div class="col-12 col-sm-6 col-lg-3"
+                 data-aos="fade-up">
+                <div class="card h-100 text-center">
+                    <img src="img2/de4.jpg"
+                         class="card-img-top"
+                         style="height:350px; object-fit:cover;">
+                    <div class="card-body d-flex flex-column">
+                        <h4 class="card-title">
+                            tart (lemon, chocolate, fruit)
+                        </h4>
+                        <p class="card-text">
+                            $6 for a small tart, $10 for a large tart
+                        </p>
+                        <a href="#ordernow"
+                           class="btn mt-auto"
+                           style="background-color:#602902 !important;
+                                  color:#ff9c08 ;">
+                            order now
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- de6-->
+            <div class="col-12 col-sm-6 col-lg-3"
+                 data-aos="fade-up">
+                <div class="card h-100 text-center">
+                    <img src="img2/de6.jpg"
+                         class="card-img-top"
+                         style="height:350px; object-fit:cover;">
+                    <div class="card-body d-flex flex-column">
+                        <h4 class="card-title">
+                            ice cream (vanilla, chocolate, strawberry, mint, and more)
+                        </h4>
+                        <p class="card-text">
+                            a scoop $3, two scoops $5, three scoops $7
+                        </p>
+                        <a href="#ordernow"
+                           class="btn mt-auto"
+                           style="background-color:#602902 !important;
+                                  color:#ff9c08 ;">
+                            order now
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- de7-->
+            <div class="col-12 col-sm-6 col-lg-3"
+                 data-aos="fade-up">
+                <div class="card h-100 text-center">
+                    <img src="img2/de7.jpg"
+                         class="card-img-top"
+                         style="height:350px; object-fit:cover;">
+                    <div class="card-body d-flex flex-column">
+                        <h4 class="card-title">
+                            cake (chocolate, vanilla, red velvet, carrot, and more)
+                        </h4>
+                        <p class="card-text">
+                            $5 per slice, $30 for a whole cake
+                        </p>
+                        <a href="#ordernow"
+                           class="btn mt-auto"
+                           style="background-color:#602902 !important;
+                                  color:#ff9c08 ;">
+                            order now
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- de8-->
+            <div class="col-12 col-sm-6 col-lg-3"
+                 data-aos="fade-up">
+                <div class="card h-100 text-center">
+                    <img src="img2/de8.jpg"
+                         class="card-img-top"
+                         style="height:350px; object-fit:cover;"
+                         >
+                    <div class="card-body d-flex flex-column">
+                        <h4 class="card-title">
+                            fruits cake (strawberry, blueberry, mixed fruits)
+                        </h4>
+                        <p class="card-text">
+                            $8
+                        </p>
+                        <a href="#ordernow"
+                           class="btn mt-auto"
+                           style="background-color:#602902 !important;
+                                  color:#ff9c08 ;">
+                            order now
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+ <div id="ourrestaurant" 
+     class="carousel slide mt-0 pt-4" 
+     data-bs-ride="carousel">
+    <!-- Indicators -->
+    <div class="carousel-indicators">
+        <button type="button"
+                data-bs-target="#ourrestaurant"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1">
+        </button>
+        <button type="button"
+                data-bs-target="#ourrestaurant"
+                data-bs-slide-to="1"
+                aria-label="Slide 2">
+        </button>
+        <button type="button"
+                data-bs-target="#ourrestaurant"
+                data-bs-slide-to="2"
+                aria-label="Slide 3">
+        </button>
+        <button type="button"
+                data-bs-target="#ourrestaurant"
+                data-bs-slide-to="3"
+                aria-label="Slide 4">
+        </button>
+    </div>
+
+
+    <!-- Carousel -->
+    <div class="carousel-inner">
+        <!-- 1 -->
+        <div class="carousel-item active">
+
+            <img src="img2/a.jpg"
+                 class="d-block w-100"
+                 style=" object-fit: cover; height: 400px;">
+            <div class="carousel-caption">
+                <h1>DELICIOUS</h1>
+                <p>Experience the taste of excellence.</p>
+                <a href="#pizzas" class="btn btn-light">
+                    try our pizzas
+                </a>
+            </div>
+        </div>
+
+
+        <!-- Slide 2 -->
+        <div class="carousel-item">
+            <img src="img2/b.jpg"
+                 class="d-block w-100"
+                  style=" object-fit: cover; height: 400px;">
+            <div class="carousel-caption">
+                <h1>UNIQUE</h1>
+                <p>having a unique style</p>
+                <a href="#drinks" class="btn btn-light">
+                    try our drinks
+                </a>
+            </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="carousel-item">
+            <img src="img2/c.jpg"
+                 class="d-block w-100"
+                 style=" object-fit: cover; height: 400px;" >
+            <div class="carousel-caption">
+                <h1>CLASSIC</h1>
+                <p>Timeless flavors that never go out of style.</p>
+                <a href="#desserts" class="btn btn-light">
+                    you deserve a treat
+                </a>
+            </div>
+        </div>
+
+        <!-- Slide 4 -->
+        <div class="carousel-item">
+            <img src="img2/d.jpg"
+                 class="d-block w-100"
+                 style=" object-fit: cover; height: 400px;">
+            <div class="carousel-caption">
+                <h1>tasty</h1>
+                <p>Bring more color to your dining experience.</p>
+                <a href="#burgers" class="btn btn-light">
+                    try our burgers
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- Previous -->
+    <button class="carousel-control-prev"
+            type="button"
+            data-bs-target="#ourrestaurant"
+            data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+
+    <!-- Next -->
+    <button class="carousel-control-next"
+            type="button"
+            data-bs-target="#ourrestaurant"
+            data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+
+
+
+
+<!-- ================= ORDER ================= -->
+
+<section id="ordernow" class="py-5">
+
+    <div class="container">
+        <div class="text-center mb-5">
+            <h1 style="color:#602902;">
+                Order Now
+            </h1>
+            <p>
+                Choose your favorite dish,
+                and we'll take care of the rest.
+            </p>
+        </div>
+        <form class="order-form" id="orderform">
+ <!-- ================= CUSTOMER INFORMATION ================= -->
+            <div class="mb-5">
+                <h2 style="color:#602902;">
+                    Customer Information
+                </h2>
+                <hr>
+
+                <div class="row g-3">
+                    <div class="col-md-6">
+                        <label for="fname" class="form-label">
+                            First Name
+                        </label>
+                        <input type="text"
+                               class="form-control"
+                               id="fname"
+                               name="fname"
+                               placeholder="Enter your first name"
+                               required>
+                    </div>
+
+                    <div class="col-md-6">
+                        <label for="lname" class="form-label">
+                            Last Name
+                        </label>
+                        <input type="text"
+                               class="form-control"
+                               id="lname"
+                               name="lname"
+                               placeholder="Enter your last name"
+                               required>
+                    </div>
+                </div>
+
+                <!-- Email -->
+                <div class="mt-3">
+                    <label for="email" class="form-label">
+                        Email Address
+                    </label>
+                    <input type="email"
+                           class="form-control"
+                           id="email"
+                           name="email"
+                           placeholder="example@email.com"
+                           required>
+                </div>
+
+                <!-- Phone -->
+                <div class="mt-3">
+                    <label for="phone" class="form-label">
+                        Phone Number
+                    </label>
+                    <input type="tel"
+                           class="form-control"
+                           id="phone"
+                           name="phone"
+                           placeholder="+961 XX XXX XXX"
+                           required>
+                </div>
+
+                <!-- Address -->
+                <div class="mt-3">
+                    <label for="address" class="form-label">
+                        Delivery Address
+                    </label>
+                    <textarea
+                        class="form-control"
+                        id="address"
+                        name="address"
+                        rows="4"
+                        placeholder="Enter your complete delivery address"
+                        required></textarea>
+                </div>
+            </div>
+
+            <!-- ================= DISHES ================= -->
+            <div class="dishes-section">
+                <h2 style="color:#602902;">
+                    Choose Your Dishes
+                </h2>
+                <p>
+                    Select as many dishes as you would like.
+                </p>
+                <hr>
+                <!-- ================= burgers ================= -->
+                <h3 class="mt-4" style="color:#602902;">
+                    burgers
+                </h3>
+                <div class="row g-3">
+
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <label class="card d-block p-3 border rounded">
+                            <input type="checkbox"
+                                   name="products[]"
+                                   ">
+                            <span class="ms-2">
+                                classic cheeseburger
+                            </span>
+                            <span class="price float-end">
+                                $5.00
+                            </span>
+                        </label>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <label class="card d-block p-3 border rounded">
+                            <input type="checkbox"
+                                   name="products[]"
+                                >
+                            <span class="ms-2">
+                                BBQ burger
+                            </span>
+                            <span class="price float-end">
+                                $6.00
+                            </span>
+                        </label>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <label class="card d-block p-3 border rounded">
+                            <input type="checkbox"
+                                   name="products[]"
+                            >
+                            <span class="ms-2">
+                                bacon cheeseburger
+                            </span>
+                            <span class="price float-end">
+                                $8.00
+                            </span>
+                        </label>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <label class="card d-block p-3 border rounded">
+                            <input type="checkbox"
+                                   name="products[]"
+                                  >
+                            <span class="ms-2">
+                                chicken burger
+                            </span>
+                            <span class="price float-end">
+                                $7.00
+                            </span>
+                        </label>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <label class="card d-block p-3 border rounded">
+                            <input type="checkbox"
+                                   name="products[]"
+                                   >
+                            <span class="ms-2">
+                                fish burger
+                            </span>
+                            <span class="price float-end">
+                                $10.00
+                            </span>
+                        </label>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <label class="card d-block p-3 border rounded">
+                            <input type="checkbox"
+                                   name="products[]"
+                                >
+                            <span class="ms-2">
+                                mushroom burger
+                            </span>
+                            <span class="price float-end">
+                                $9.00
+                            </span>
+                        </label>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <label class="card d-block p-3 border rounded">
+                            <input type="checkbox"
+                                   name="products[]"
+                                >
+                            <span class="ms-2">
+                                double cheeseburger
+                            </span>
+                            <span class="price float-end">
+                                $13
+                            </span>
+                        </label>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <label class="card d-block p-3 border rounded">
+                            <input type="checkbox"
+                                   name="products[]"
+                                   >
+                            <span class="ms-2">
+                                veggie burger
+                            </span>
+                            <span class="price float-end">
+                                $11.00
+                            </span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- ================= pizzas ================= -->
+                <h3 class="mt-5" style="color:#602902;">
+                    Pizzas
+                </h3>
+                <div class="row g-3">
+
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <label class="card d-block p-3 border rounded">
+                            <input type="checkbox"
+                                   name="products[]"
+                                  >
+                            <span class="ms-2">
+                                four cheese pizza
+                            </span>
+                            <span class="price float-end">
+                                $12.00
+                            </span>
+                        </label>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <label class="card d-block p-3 border rounded">
+                            <input type="checkbox"
+                                   name="products[]"
+                                  >
+                            <span class="ms-2">
+                                BBQ chicken pizza
+                            </span>
+                            <span class="price float-end">
+                                $15.00
+                            </span>
+                        </label>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <label class="card d-block p-3 border rounded">
+                            <input type="checkbox"
+                                   name="products[]"
+                                  >
+                            <span class="ms-2">
+                                Margherita pizza
+                            </span>
+                            <span class="price float-end">
+                                $10.00
+                            </span>
+                        </label>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <label class="card d-block p-3 border rounded">
+                            <input type="checkbox"
+                                   name="products[]"
+                                   >
+                            <span class="ms-2">
+                                buffalo pizza
+                            </span>
+                            <span class="price float-end">
+                                $14.00
+                            </span>
+                        </label>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <label class="card d-block p-3 border rounded">
+                            <input type="checkbox"
+                                   name="products[]"
+                                   >
+                            <span class="ms-2">
+                                pepperoni pizza
+                            </span>
+                            <span class="price float-end">
+                                $10.00
+                            </span>
+                        </label>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <label class="card d-block p-3 border rounded">
+                            <input type="checkbox"
+                                   name="products[]"
+                                   >
+                            <span class="ms-2">
+                                mushroom pizza
+                            </span>
+                            <span class="price float-end">
+                                $14.00
+                            </span>
+                        </label>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <label class="card d-block p-3 border rounded">
+                            <input type="checkbox"
+                                   name="products[]"
+                                   >
+                            <span class="ms-2">
+                                neapolitan pizza
+                            </span>
+                            <span class="price float-end">
+                                $15.00
+                            </span>
+                        </label>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <label class="card d-block p-3 border rounded">
+                            <input type="checkbox"
+                                   name="products[]"
+                                   >
+                            <span class="ms-2">
+                                veggie pizza
+                            </span>
+                            <span class="price float-end">
+                                $12.00
+                            </span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- ================= drinks ================= -->
+                <h3 class="mt-5" style="color:#602902;">
+                    Drinks
+                </h3>
+                <div class="row g-3">
+
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <label class="card d-block p-3 border rounded">
+                            <input type="checkbox"
+                                   name="products[]"
+                                   >
+                            <span class="ms-2">
+                                water
+                            </span>
+                            <span class="price float-end">
+                                $1.00
+                            </span>
+                        </label>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <label class="card d-block p-3 border rounded">
+                            <input type="checkbox"
+                                   name="products[]"
+                                   >
+                            <span class="ms-2">
+                                coke
+                            </span>
+                            <span class="price float-end">
+                                $4.00
+                            </span>
+                        </label>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <label class="card d-block p-3 border rounded">
+                            <input type="checkbox"
+                                   name="products[]"
+                                  >
+                            <span class="ms-2">
+                                milkshake
+                            </span>
+                            <span class="price float-end">
+                                $7.00
+                            </span>
+                        </label>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <label class="card d-block p-3 border rounded">
+                            <input type="checkbox"
+                                   name="products[]"
+                                   >
+                            <span class="ms-2">
+                                hot chocolate
+                            </span>
+                            <span class="price float-end">
+                                $5.00
+                            </span>
+                        </label>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <label class="card d-block p-3 border rounded">
+                            <input type="checkbox"
+                                   name="products[]"
+                                   >
+                            <span class="ms-2">
+                                juice
+                            </span>
+                            <span class="price float-end">
+                                $6.00
+                            </span>
+                        </label>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <label class="card d-block p-3 border rounded">
+                            <input type="checkbox"
+                                   name="products[]"
+                                   >
+                            <span class="ms-2">
+                                energy drinks
+                            </span>
+                            <span class="price float-end">
+                                $9.00
+                            </span>
+                        </label>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <label class="card d-block p-3 border rounded">
+                            <input type="checkbox"
+                                   name="products[]"
+                                   >
+                            <span class="ms-2">
+                                tequila
+                            </span>
+                            <span class="price float-end">
+                                $12.00
+                            </span>
+                        </label>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <label class="card d-block p-3 border rounded">
+                            <input type="checkbox"
+                                   name="products[]"
+                                   >
+                            <span class="ms-2">
+                                wine
+                            </span>
+                            <span class="price float-end">
+                                $15.00
+                            </span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+
+
+              <!-- ================= desserts ================= -->
+                <h3 class="mt-5" style="color:#602902;">
+                    Desserts
+                </h3>
+                <div class="row g-3">
+
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <label class="card d-block p-3 border rounded">
+                            <input type="checkbox"
+                                   name="products[]"
+                                   >
+                            <span class="ms-2">
+                                donuts
+                            </span>
+                            <span class="price float-end">
+                                $3.00
+                            </span>
+                        </label>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <label class="card d-block p-3 border rounded">
+                            <input type="checkbox"
+                                   name="products[]"
+                                   >
+                            <span class="ms-2">
+                                cupcake
+                            </span>
+                            <span class="price float-end">
+                                $4.00
+                            </span>
+                        </label>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <label class="card d-block p-3 border rounded">
+                            <input type="checkbox"
+                                   name="products[]"
+                                  >
+                            <span class="ms-2">
+                                cinnamon rolls
+                            </span>
+                            <span class="price float-end">
+                                $5.00
+                            </span>
+                        </label>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <label class="card d-block p-3 border rounded">
+                            <input type="checkbox"
+                                   name="products[]"
+                                   >
+                            <span class="ms-2">
+                                cookies
+                            </span>
+                            <span class="price float-end">
+                                $4.00
+                            </span>
+                        </label>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <label class="card d-block p-3 border rounded">
+                            <input type="checkbox"
+                                   name="products[]"
+                                   >
+                            <span class="ms-2">
+                                tart
+                            </span>
+                            <span class="price float-end">
+                                $6.00
+                            </span>
+                        </label>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <label class="card d-block p-3 border rounded">
+                            <input type="checkbox"
+                                   name="products[]"
+                                   >
+                            <span class="ms-2">
+                                ice cream
+                            </span>
+                            <span class="price float-end">
+                                $3.00
+                            </span>
+                        </label>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <label class="card d-block p-3 border rounded">
+                            <input type="checkbox"
+                                   name="products[]"
+                                   >
+                            <span class="ms-2">
+                                cake
+                            </span>
+                            <span class="price float-end">
+                                $5.00
+                            </span>
+                        </label>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <label class="card d-block p-3 border rounded">
+                            <input type="checkbox"
+                                   name="products[]"
+                                   >
+                            <span class="ms-2">
+                                fruit cake
+                            </span>
+                            <span class="price float-end">
+                                $8.00
+                            </span>
+                        </label>
+                    </div>
+                </div>
+            
+
+
+             <div class="mt-3">
+                    <label for="note" class="form-label">
+                        any notes
+                    </label>
+                    <textarea
+                        class="form-control"
+                        id="note"
+                        name="=note"
+                        rows="4"
+                        placeholder=" what do you think we should be aware of"
+                        required></textarea>
+                </div>
+    </div>
+
+            <!-- ================= SUBMIT ================= -->
+            <div class="text-center mt-5">
+                <button type="submit"
+                        class="btn1 btn-lg"
+                         style="background-color:#602902 !important;
+                               color:#ff9c08 !important;
+                               ">
+                       
+                    Place Order
+                </button>
+            </div>
+        </form>
+    </div>
+
+</section> 
+
+
+
+<!-- ================= CONTACT / FOOTER ================= -->
+
+<footer class=" text-light" id="contactus" style="background-color: #602902;">
+
+    <div class="container py-5">
+
+        <div class="row g-4 text-center text-md-start">
+
+            <!-- About -->
+            <div class="col-12 col-md-4">
+
+                <h3 class="fw-bold text-warning">
+                    Bite & Bliss
+                </h3>
+
+                <p class="mt-3">
+                    Good food, good mood!
+                    Enjoy delicious meals made with
+                    fresh ingredients and lots of love.
+                </p>
+
+                <!-- Social Media -->
+                <div class="mt-3">
+
+                    <a href="#" class="text-light fs-4 me-3">
+                        <i class="bi bi-facebook"></i>
+                    </a>
+
+                    <a href="#" class="text-light fs-4 me-3">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+
+                    <a href="#" class="text-light fs-4">
+                        <i class="bi bi-tiktok"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- Contact -->
+            <div class="col-12 col-md-4">
+
+                <h4 class="fw-bold text-warning">
+                    Contact Us
+                </h4>
+
+                <p class="mt-3">
+                    <i class="bi bi-geo-alt-fill text-warning"></i>
+                    Beirut, Lebanon
+                </p>
+
+                <p>
+                    <i class="bi bi-telephone-fill text-warning"></i>
+                    +961 70 123 456
+                </p>
+
+                <p>
+                    <i class="bi bi-envelope-fill text-warning"></i>
+                    info@biteandbliss.com
+                </p>
+
+            </div>
+
+
+            <!-- Opening Hours -->
+            <div class="col-12 col-md-4">
+
+                <h4 class="fw-bold text-warning">
+                    Opening Hours
+                </h4>
+
+                <p class="mt-3">
+                    <strong>Monday - Friday</strong><br>
+                    11:00 AM - 10:00 PM
+                </p>
+
+                <p>
+                    <strong>Saturday - Sunday</strong><br>
+                    12:00 PM - 11:00 PM
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- Bottom -->
+        <hr class="mt-5">
+
+        <div class="text-center">
+
+            <p class="mb-0">
+                © 2026 Bite & Bliss | All Rights Reserved
+            </p>
+
+        </div>
+
+    </div>
+
+</footer>
+
+         
+    
+
+
+    <script src="bootstrap.bundle.min.js"></script>
+    <script src="aos.js"></script>
+     <script>
+        AOS.init();
+    </script>
+</body>
+</html>
+<script src="script.js"></script>
